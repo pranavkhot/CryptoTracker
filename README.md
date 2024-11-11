@@ -1,34 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Crypto Tracker 🚀
 
-## Getting Started
+**Crypto Tracker** is a modern web application developed with [Next.js](https://nextjs.org/) and [React](https://reactjs.org/) that enables users to monitor real-time cryptocurrency data. Users can easily access essential information, such as current prices, market cap, and volume, in an intuitive and visually appealing interface. The app’s clean, responsive design provides a seamless experience across devices.
 
-First, run the development server:
+---
+<p align="center">
+  <a href="https://cryptotracker-pi.vercel.app" target="_blank">
+    <img src="https://github.com/user-attachments/assets/b748141c-11a3-49c0-943d-a7d1a3b41cb1" alt="Crypto Tracker Website"/>
+  </a>
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 📜 Table of Contents
+- Features
+- Tech Stack
+- Usage
+- Project Structure
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+---
+## ✨ Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- **📈 Real-time Cryptocurrency Tracking**: View updated cryptocurrency data, including prices, volume, market cap, and percentage changes.
+- **🔍 Search Functionality**: Quickly find specific cryptocurrencies using a convenient search bar.
+- **🔗 Detailed Coin View**: Access individual cryptocurrency details, such as an image, ticker, and current price, on a dedicated page.
+- **🌙 Dark-Themed UI**: Consistent, dark theme provides a polished user experience that is easy on the eyes.
+- **📱 Responsive Design**: Fully responsive layout ensures accessibility across devices of various screen sizes.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend**:
+  - **Next.js**: Used for server-side rendering, routing, and optimized static site generation.
+  - **React**: Provides a component-based structure for building the user interface.
+- **Styling**:
+  - **CSS Modules**: Component-specific CSS files provide scoped styling for each part of the UI.
+  - **Global CSS**: Common styles for the overall layout and appearance of the application.
+- **Deployment**:
+  - **Netlify**: Enables fast and scalable deployment, optimized for static and serverless applications.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🚀 Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+When running the application:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Home Page**: Access a list of popular cryptocurrencies with live updates for easy monitoring.
+2. **Search**: Use the search bar to quickly locate any cryptocurrency by name or ticker symbol.
+3. **Details Page**: Click on a cryptocurrency for more in-depth information, including its image, ticker, and real-time price.
+
+---
+
+## 📁 Project Structure
+
+A quick look at the core files and their responsibilities:
+
+- **public/**: 
+  - Contains static assets such as icons, images, and other resources required across the application.
+
+- **pages/**:
+  - `index.js`: Main page listing the popular cryptocurrencies with essential data such as price, volume, and percentage changes. 
+  - `[id].js`: A dynamic routing page that generates individual detail views for each cryptocurrency, including a larger display of the coin’s image, ticker symbol, and current price.
+
+- **components/**:
+  - `Layout.js`: Handles the layout structure shared across the application, including consistent styling and reusable components like headers and footers.
+  - `CoinList.js`: Renders the list of cryptocurrencies, applying relevant styles and presenting essential metrics for each coin in a visually structured manner.
+
+- **styles/**:
+  - `globals.css`: Defines global styles, including fonts, colors, and universal styling defaults such as box-sizing, margin, and padding, with an imported font for consistency.
+  - `Coins.module.css`: Styles specifically for the main cryptocurrency list view, including hover effects, row structure, and color-coded price change indicators.
+  - `Coin.module.css`: Styles the detailed view for individual cryptocurrencies, centering content and emphasizing elements such as the coin’s name, ticker, and price.
+  - `Search.module.css`: Provides custom styling for the search bar, including a dark background and a modern input placeholder color for easy readability.
+
+- **package.json**: Defines the project’s metadata, scripts, and dependencies (like Next.js and React) that power the application.
+
+
+---
+
+**Enjoy tracking with Crypto Tracker! 💰🚀**
